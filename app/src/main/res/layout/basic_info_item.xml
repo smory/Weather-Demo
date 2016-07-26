@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cardView="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    cardView:cardCornerRadius="@dimen/cardview_corner_radius"
+    android:layout_marginEnd="@dimen/cardview_margin"
+    android:layout_marginRight="@dimen/cardview_margin"
+    android:layout_marginStart="@dimen/cardview_margin"
+    android:layout_marginLeft="@dimen/cardview_margin"
+    android:layout_marginTop="@dimen/cardview_margin">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/cardview_inner_layout_padding"
+        android:paddingEnd="@dimen/cardview_inner_layout_padding"
+        android:background="?android:attr/selectableItemBackground">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Day of week"
+            android:id="@+id/week_day"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:paddingBottom="@dimen/text_view_bottom_padding" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/week_day"
+            android:id="@+id/linear_layout_min_temp"
+            android:paddingRight="@dimen/min_temp_padding_right">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/min"
+                android:id="@+id/min_tv"
+                android:paddingRight="@dimen/text_view_right_padding" />
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="8,2 °C"
+                    android:id="@+id/nin_temp"
+                    android:layout_below="@+id/week_day"
+                    android:layout_toRightOf="@+id/iw_arrow_down"
+                    android:layout_toEndOf="@+id/iw_arrow_down" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/linear_layout_min_temp"
+            android:id="@+id/linear_layout_max_temp"
+            android:layout_toRightOf="@+id/linear_layout_min_temp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/max"
+                android:id="@+id/max_tv"
+                android:paddingRight="@dimen/text_view_right_padding" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="25,9 °C"
+                android:id="@+id/max_temp"
+                android:layout_below="@+id/week_day"
+                android:layout_toRightOf="@+id/iw_arrow_up"
+                android:layout_toEndOf="@+id/iw_arrow_up" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Mostly cloudy"
+            android:id="@+id/weather_condition"
+            android:layout_below="@+id/linear_layout_min_temp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:paddingTop="@dimen/text_view_bottom_padding" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/weather_icon_iw"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/weather_placeholder" />
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Weather Demo</string>
+    <string name="min">Min:</string>
+    <string name="max">Max:</string>
+    <string name="min_temperature">Minimal temperature:</string>
+    <string name="max_temperature">Maximal temperature:</string>
+    <string name="humidity">Humidity:</string>
+    <string name="wind">Wind:</string>
+    <string name="weather_format_celsius">%.2f °C</string>
+    <string name="weather_format_wind_speed">%.2f km/h</string>
+    <string name="weather_format_humidity">%.2f %%</string>
+    <string name="weather_value_not_available">--</string>
+    <string name="loc_provider_not_turned_on">Location network service is not turned on on your device. Press OK to go to settings or specify location manually.</string>
+    <string name="enter_city">Enter city name</string>
+    <string name="cancel">Cancel</string>
+    <string name="search">Search</string>
+    <string name="error">Error</string>
+    <string name="manual_entry">Specify location manually</string>
+    <string name="work_in_progress">Loading data</string>
+    <string name="check_inet_connection">Please check your internet connection. </string>
+</resources>

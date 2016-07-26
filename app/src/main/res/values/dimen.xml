@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="cardview_inner_layout_padding">5dp</dimen>
+    <dimen name="compas_image_padding_right">5dp</dimen>
+    <dimen name="text_view_right_padding">4dp</dimen>
+    <dimen name="cardview_corner_radius">5dp</dimen>
+    <dimen name="cardview_margin">5dp</dimen>
+    <dimen name="text_view_bottom_padding">5dp</dimen>
+    <dimen name="min_temp_padding_right">15dp</dimen>
+</resources>

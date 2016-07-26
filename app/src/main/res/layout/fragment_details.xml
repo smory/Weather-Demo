@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cardView="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    cardView:cardCornerRadius="@dimen/cardview_corner_radius"
+    android:layout_marginEnd="@dimen/cardview_margin"
+    android:layout_marginRight="@dimen/cardview_margin"
+    android:layout_marginStart="@dimen/cardview_margin"
+    android:layout_marginLeft="@dimen/cardview_margin"
+    android:layout_marginTop="@dimen/cardview_margin">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/time_temp_sv"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true" >
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/details_time_temp_host_ll">
+
+                <include
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    layout="@layout/details_time_temp" />
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/time_temp_sv"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:padding="@dimen/cardview_inner_layout_padding">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/min_temperature"
+                android:id="@+id/min_temp_tv"
+                android:paddingRight="@dimen/text_view_right_padding"
+                android:paddingTop="@dimen/cardview_inner_layout_padding"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/weather_format_celsius"
+                android:id="@+id/detail_min_tv"
+                android:layout_alignBottom="@+id/min_temp_tv"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/max_temperature"
+                android:id="@+id/max_temp_tv"
+                android:paddingRight="@dimen/text_view_right_padding"
+                android:layout_below="@+id/min_temp_tv"
+                android:layout_alignLeft="@+id/min_temp_tv"
+                android:layout_alignStart="@+id/min_temp_tv" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/weather_format_celsius"
+                android:id="@+id/details_max_tv"
+                android:layout_alignBottom="@+id/max_temp_tv"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/humidity"
+                android:id="@+id/humidity_tv"
+                android:paddingRight="@dimen/text_view_right_padding"
+                android:layout_below="@+id/max_temp_tv"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/weather_format_humidity"
+                android:id="@+id/details_humidity_tv"
+                android:layout_alignBottom="@+id/humidity_tv"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/wind"
+                android:id="@+id/wind_tv"
+                android:paddingRight="@dimen/text_view_right_padding"
+                android:layout_below="@+id/humidity_tv"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/weather_format_wind_speed"
+                android:id="@+id/details_wind_speed_tv"
+                android:layout_alignBottom="@+id/wind_tv"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
